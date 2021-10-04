@@ -1,0 +1,429 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 608829BB
+P 2050 2200
+F 0 "J1" H 2050 3681 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2050 3590 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 2050 2200 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2050 2200 50  0001 C CNN
+	1    2050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN37A12A:SN37A12A J1-TX1
+U 1 1 608C4EE2
+P 1350 4050
+F 0 "J1-TX1" H 1382 4417 50  0000 C CNN
+F 1 "SN37A12A" H 1382 4326 50  0000 C CNN
+F 2 "SWITCHCRAFT_SN37A12A" H 1350 4050 50  0001 L BNN
+F 3 "" H 1350 4050 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 1350 4050 50  0001 L BNN "STANDARD"
+F 5 "Switchcraft" H 1350 4050 50  0001 L BNN "MANUFACTURER"
+F 6 "F" H 1350 4050 50  0001 L BNN "PARTREV"
+	1    1350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 6099F195
+P 3400 4000
+F 0 "#PWR0101" H 3400 3750 50  0001 C CNN
+F 1 "GNDREF" H 3405 3827 50  0000 C CNN
+F 2 "" H 3400 4000 50  0001 C CNN
+F 3 "" H 3400 4000 50  0001 C CNN
+	1    3400 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 4150 3400 4000
+$Comp
+L Diode:SM6T24A D1
+U 1 1 609A36C4
+P 3400 4300
+F 0 "D1" V 3446 4220 50  0000 R CNN
+F 1 "nte4902" V 3355 4220 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P15.24mm_Horizontal" H 3400 4100 50  0001 C CNN
+F 3 "https://www.nteinc.com/specs/4900to4999/pdf/nte4902_98.pdf" H 3350 4300 50  0001 C CNN
+	1    3400 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 60F3A74D
+P 4350 5850
+F 0 "J2" V 4222 5930 50  0000 L CNN
+F 1 "120VDC" V 4313 5930 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4350 5850 50  0001 C CNN
+F 3 "~" H 4350 5850 50  0001 C CNN
+	1    4350 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:SM6T24A D3
+U 1 1 60F5C8BB
+P 2850 4900
+F 0 "D3" V 2804 4980 50  0000 L CNN
+F 1 "nte4902" V 2895 4980 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P15.24mm_Horizontal" V 2941 4980 50  0001 L CNN
+F 3 "https://www.nteinc.com/specs/4900to4999/pdf/nte4902_98.pdf" H 2800 4900 50  0001 C CNN
+	1    2850 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 4900 3150 5000
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 60F5E939
+P 2550 4900
+F 0 "#PWR0103" H 2550 4650 50  0001 C CNN
+F 1 "GNDREF" H 2555 4727 50  0000 C CNN
+F 2 "" H 2550 4900 50  0001 C CNN
+F 3 "" H 2550 4900 50  0001 C CNN
+	1    2550 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 60F4B024
+P 6400 3000
+F 0 "Q1" H 6590 3046 50  0000 L CNN
+F 1 "2N3904" H 6590 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6600 2925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 6400 3000 50  0001 L CNN
+	1    6400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 60F4ECAE
+P 6300 4700
+F 0 "R1" H 6368 4746 50  0000 L CNN
+F 1 "3.3k" H 6368 4655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6340 4690 50  0001 C CNN
+F 3 "~" H 6300 4700 50  0001 C CNN
+	1    6300 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 4300 6000 3600
+Wire Wire Line
+	6000 3600 3400 3600
+Wire Wire Line
+	1750 3600 1750 3500
+Wire Wire Line
+	1650 3500 1750 3500
+Connection ~ 1750 3500
+Wire Wire Line
+	1750 3500 1850 3500
+Wire Wire Line
+	1850 3500 1950 3500
+Connection ~ 1850 3500
+Wire Wire Line
+	1950 3500 2050 3500
+Connection ~ 1950 3500
+Wire Wire Line
+	2050 3500 2150 3500
+Connection ~ 2050 3500
+Wire Wire Line
+	2150 3500 2250 3500
+Connection ~ 2150 3500
+Wire Wire Line
+	2250 3500 2350 3500
+Connection ~ 2250 3500
+Wire Wire Line
+	6500 4700 6450 4700
+Wire Wire Line
+	1850 900  1850 650 
+Wire Wire Line
+	1850 650  6500 650 
+Wire Wire Line
+	6500 650  6500 2800
+Wire Wire Line
+	2850 1600 6200 1600
+Wire Wire Line
+	6200 1600 6200 3000
+$Comp
+L 2021-07-18_22-56-56:G3VM-401CR K1
+U 1 1 60F79FEF
+P 5600 5100
+F 0 "K1" H 6250 3663 60  0000 C CNN
+F 1 "G3VM-401CR" H 6250 3769 60  0000 C CNN
+F 2 "G3VM-401CR:G3VM-401CR" H 6138 5178 60  0001 C CNN
+F 3 "" H 5600 5100 60  0000 C CNN
+	1    5600 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 3200 6500 4700
+Wire Wire Line
+	5600 4700 6150 4700
+Wire Wire Line
+	6000 4300 5600 4300
+Wire Wire Line
+	4300 3900 4150 3900
+Wire Wire Line
+	4150 5100 4300 5100
+Wire Wire Line
+	3400 4500 3400 4450
+Wire Wire Line
+	3200 4100 3200 4500
+Wire Wire Line
+	3200 4500 3400 4500
+Wire Wire Line
+	3150 4900 3000 4900
+Wire Wire Line
+	2700 4900 2650 4900
+Text GLabel 3400 3500 1    50   Input ~ 0
+GND
+Wire Wire Line
+	2650 4900 2650 5000
+Wire Wire Line
+	2650 5000 3050 5000
+Connection ~ 2650 4900
+Wire Wire Line
+	2650 4900 2550 4900
+$Comp
+L 2021-07-18_22-56-56:G3VM-401CR K2
+U 1 1 6107F9EE
+P 7150 4950
+F 0 "K2" H 7800 3513 60  0000 C CNN
+F 1 "G3VM-401CR" H 7800 3619 60  0000 C CNN
+F 2 "G3VM-401CR:G3VM-401CR" H 7688 5028 60  0001 C CNN
+F 3 "" H 7150 4950 60  0000 C CNN
+	1    7150 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SN37A12A:SN37A12A J1-TX2
+U 1 1 61099643
+P 6350 5950
+F 0 "J1-TX2" H 6382 6317 50  0000 C CNN
+F 1 "SN37A12A" H 6382 6226 50  0000 C CNN
+F 2 "SWITCHCRAFT_SN37A12A" H 6350 5950 50  0001 L BNN
+F 3 "" H 6350 5950 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 6350 5950 50  0001 L BNN "STANDARD"
+F 5 "Switchcraft" H 6350 5950 50  0001 L BNN "MANUFACTURER"
+F 6 "F" H 6350 5950 50  0001 L BNN "PARTREV"
+	1    6350 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 610A180A
+P 7750 950
+F 0 "R2" H 7818 996 50  0000 L CNN
+F 1 "3.3k" H 7818 905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 7790 940 50  0001 C CNN
+F 3 "~" H 7750 950 50  0001 C CNN
+	1    7750 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1100 7750 1150
+Wire Wire Line
+	1250 2500 1100 2500
+Wire Wire Line
+	1100 2500 1100 600 
+Wire Wire Line
+	1100 600  7750 600 
+Wire Wire Line
+	7550 3650 7750 3650
+Wire Wire Line
+	7150 3650 7150 3500
+Wire Wire Line
+	7150 3500 7300 3500
+Wire Wire Line
+	8350 3500 8350 3650
+Wire Wire Line
+	2250 900  7300 900 
+Wire Wire Line
+	7300 900  7300 3500
+Connection ~ 7300 3500
+Wire Wire Line
+	7300 3500 8350 3500
+Wire Wire Line
+	7750 600  7750 800 
+$Comp
+L Device:R_US R3
+U 1 1 610F0A03
+P 8150 950
+F 0 "R3" H 8218 996 50  0000 L CNN
+F 1 "100" H 8218 905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 8190 940 50  0001 C CNN
+F 3 "~" H 8150 950 50  0001 C CNN
+	1    8150 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1150 7750 1150
+Connection ~ 7750 1150
+Wire Wire Line
+	8150 1100 8150 1150
+Wire Wire Line
+	7750 1150 7750 3650
+Connection ~ 7750 3650
+Wire Wire Line
+	7750 3650 7950 3650
+Text GLabel 8350 800  2    50   Input ~ 0
+GND
+Wire Wire Line
+	8150 800  8350 800 
+Wire Wire Line
+	7200 5900 7950 5900
+Wire Wire Line
+	7950 5900 7950 4950
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 611122E2
+P 6400 5150
+F 0 "#PWR0102" H 6400 4900 50  0001 C CNN
+F 1 "GNDREF" H 6405 4977 50  0000 C CNN
+F 2 "" H 6400 5150 50  0001 C CNN
+F 3 "" H 6400 5150 50  0001 C CNN
+	1    6400 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 5150 6400 5150
+$Comp
+L Diode:SM6T24A D2
+U 1 1 6111265D
+P 6700 5150
+F 0 "D2" V 6746 5070 50  0000 R CNN
+F 1 "nte4902" V 6655 5070 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P15.24mm_Horizontal" H 6700 4950 50  0001 C CNN
+F 3 "https://www.nteinc.com/specs/4900to4999/pdf/nte4902_98.pdf" H 6650 5150 50  0001 C CNN
+	1    6700 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 5150 7550 5150
+Connection ~ 7550 5150
+Wire Wire Line
+	7550 5150 7550 4950
+$Comp
+L power:GNDREF #PWR0104
+U 1 1 6113B03D
+P 9100 5900
+F 0 "#PWR0104" H 9100 5650 50  0001 C CNN
+F 1 "GNDREF" H 9105 5727 50  0000 C CNN
+F 2 "" H 9100 5900 50  0001 C CNN
+F 3 "" H 9100 5900 50  0001 C CNN
+	1    9100 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8950 5900 9100 5900
+$Comp
+L Diode:SM6T24A D4
+U 1 1 6113B402
+P 8800 5900
+F 0 "D4" V 8846 5820 50  0000 R CNN
+F 1 "nte4902" V 8755 5820 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P15.24mm_Horizontal" H 8800 5700 50  0001 C CNN
+F 3 "https://www.nteinc.com/specs/4900to4999/pdf/nte4902_98.pdf" H 8750 5900 50  0001 C CNN
+	1    8800 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 5900 7950 5900
+Connection ~ 7950 5900
+Wire Wire Line
+	7550 5750 7550 5150
+Wire Wire Line
+	4450 5650 6750 5650
+Wire Wire Line
+	6750 5650 6750 5950
+Wire Wire Line
+	6750 6050 6750 5950
+Connection ~ 6750 5950
+Wire Wire Line
+	6750 6150 7000 6150
+Wire Wire Line
+	7000 6150 7000 5750
+Wire Wire Line
+	7000 5750 7550 5750
+Wire Wire Line
+	7200 6400 2150 6400
+Wire Wire Line
+	2150 6400 2150 4100
+Wire Wire Line
+	2150 4100 3200 4100
+Wire Wire Line
+	7200 5900 7200 6400
+Wire Wire Line
+	4350 5650 4350 5450
+Wire Wire Line
+	4350 5450 3600 5450
+Wire Wire Line
+	3600 5450 3600 5000
+Wire Wire Line
+	3150 5000 3400 5000
+Wire Wire Line
+	4250 5650 3050 5650
+Wire Wire Line
+	3050 5650 3050 5000
+Wire Wire Line
+	1750 4050 1750 4100
+Wire Wire Line
+	1750 4100 2050 4100
+Wire Wire Line
+	2050 4100 2050 4000
+Wire Wire Line
+	2050 4000 2800 4000
+Wire Wire Line
+	2800 4000 2800 4250
+Wire Wire Line
+	2800 4250 3150 4250
+Connection ~ 1750 4100
+Wire Wire Line
+	1750 4100 1750 4150
+Wire Wire Line
+	4150 3900 4150 4500
+Wire Wire Line
+	3150 4250 3150 4650
+Wire Wire Line
+	1750 4250 2600 4250
+Wire Wire Line
+	2600 4250 2600 4750
+Wire Wire Line
+	2600 4750 3400 4750
+Wire Wire Line
+	3400 4750 3400 5000
+Connection ~ 3400 5000
+Wire Wire Line
+	3400 5000 3600 5000
+Wire Wire Line
+	3400 3500 3400 3600
+Connection ~ 3400 3600
+Wire Wire Line
+	3400 3600 1750 3600
+Wire Wire Line
+	4300 4300 4300 4650
+Wire Wire Line
+	3400 4500 4150 4500
+Connection ~ 3400 4500
+Connection ~ 4150 4500
+Wire Wire Line
+	4150 4500 4150 5100
+Wire Wire Line
+	3150 4650 4300 4650
+Connection ~ 4300 4650
+Wire Wire Line
+	4300 4650 4300 4700
+$EndSCHEMATC

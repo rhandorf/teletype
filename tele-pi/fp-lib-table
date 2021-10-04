@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name SO6_LH_VIS)(type KiCad)(uri ${KIPRJMOD}/parts/ul_LH1540AAB/KiCAD/2021-04-27_15-14-37/footprints.pretty)(options "")(descr ""))
+  (lib (name SN37A12A)(type KiCad)(uri ${KIPRJMOD}/parts/SN37A12A)(options "")(descr ""))
+  (lib (name G3VM-401CR)(type KiCad)(uri ${KIPRJMOD}/parts/ul_G3VM401CR/KiCAD/2021-07-18_22-56-56/footprints.pretty)(options "")(descr ""))
+)

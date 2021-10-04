@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name 2021-04-27_15-14-37)(type Legacy)(uri ${KIPRJMOD}/parts/ul_LH1540AAB/KiCAD/2021-04-27_15-14-37/2021-04-27_15-14-37.lib)(options "")(descr ""))
+  (lib (name SN37A12A)(type Legacy)(uri ${KIPRJMOD}/parts/SN37A12A/SN37A12A.lib)(options "")(descr ""))
+  (lib (name 2021-07-18_22-56-56)(type Legacy)(uri ${KIPRJMOD}/parts/ul_G3VM401CR/KiCAD/2021-07-18_22-56-56/2021-07-18_22-56-56.lib)(options "")(descr ""))
+)
